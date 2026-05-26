@@ -1,0 +1,110 @@
+[
+  {
+    "id": "78401260-320c-4360-b554-5df1b3553e2b",
+    "question": "How do I cancel my subscription?",
+    "answer": "To cancel your subscription, go to Settings > Billing > Cancel Plan [chunk_004]. Access continues until the end of the current paid period, and no partial refunds are issued. Your data will be retained for 30 days after cancellation before permanent deletion [chunk_004].",
+    "supported": true,
+    "citations": [
+      "chunk_004"
+    ],
+    "retrieved_chunk_ids": [
+      "chunk_004",
+      "chunk_003",
+      "chunk_002",
+      "chunk_016",
+      "chunk_017"
+    ]
+  },
+  {
+    "id": "53d3276b-5bec-4dcf-bf0d-1045db58eafa",
+    "question": "What are the rate limits for the Pro plan?",
+    "answer": "The Pro plan has the following rate limits [chunk_006]: 50 requests per second, 2,000 requests per minute, and 1,000,000 requests per month.",
+    "supported": true,
+    "citations": [
+      "chunk_006"
+    ],
+    "retrieved_chunk_ids": [
+      "chunk_006",
+      "chunk_005",
+      "chunk_001",
+      "chunk_002",
+      "chunk_003"
+    ]
+  },
+  {
+    "id": "1e1ca8f9-55c6-4994-b921-183ae11ec707",
+    "question": "How do I verify webhook signatures?",
+    "answer": "To verify webhook signatures, you need to check the `X-Webhook-Signature` header included in every delivery [chunk_019]. Extract the timestamp and signature from the header by splitting on a comma, then create a signed payload by concatenating the timestamp and the decoded payload body with a period separator. Generate an expected signature using HMAC-SHA256 with your signing secret as the key and the signed payload as the message. Compare the expected signature with the received signature using a constant-time comparison function like `hmac.compare_digest()` [chunk_019]. Additionally, reject any request where the timestamp is older than 5 minutes to guard against replay attacks [chunk_019].",
+    "supported": true,
+    "citations": [
+      "chunk_019"
+    ],
+    "retrieved_chunk_ids": [
+      "chunk_019",
+      "chunk_016",
+      "chunk_015",
+      "chunk_018",
+      "chunk_021"
+    ]
+  },
+  {
+    "id": "f4024f47-7ebb-44bb-8e9f-fe370a868138",
+    "question": "What is the OAuth 2.0 refresh token lifetime?",
+    "answer": "The OAuth 2.0 refresh token lifetime is 30 days [chunk_013].",
+    "supported": true,
+    "citations": [
+      "chunk_013"
+    ],
+    "retrieved_chunk_ids": [
+      "chunk_007",
+      "chunk_002",
+      "chunk_008",
+      "chunk_013",
+      "chunk_011"
+    ]
+  },
+  {
+    "id": "ccf0f38a-4ec5-42f2-9ffb-87f760202200",
+    "question": "How long are API request logs retained?",
+    "answer": "API request logs are retained for 90 days [chunk_024].",
+    "supported": true,
+    "citations": [
+      "chunk_024"
+    ],
+    "retrieved_chunk_ids": [
+      "chunk_007",
+      "chunk_026",
+      "chunk_024",
+      "chunk_025",
+      "chunk_008"
+    ]
+  },
+  {
+    "id": "5292511f-a2b6-43ff-8e03-e7e43092eb01",
+    "question": "Does the API support GraphQL queries?",
+    "answer": "The knowledge base does not provide enough information to answer this",
+    "supported": false,
+    "citations": [],
+    "retrieved_chunk_ids": [
+      "chunk_011",
+      "chunk_007",
+      "chunk_010",
+      "chunk_009",
+      "chunk_018"
+    ]
+  },
+  {
+    "id": "e0bc6449-3ce0-4892-9499-fe6177f62965",
+    "question": "What are the uptime SLA guarantees?",
+    "answer": "The knowledge base does not provide enough information to answer this",
+    "supported": false,
+    "citations": [],
+    "retrieved_chunk_ids": [
+      "chunk_001",
+      "chunk_003",
+      "chunk_020",
+      "chunk_002",
+      "chunk_007"
+    ]
+  }
+]

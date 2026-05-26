@@ -1,0 +1,12 @@
+[project]
+name = "deriv-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "anthropic>=0.104.1",
+    "pydantic-settings>=2.14.1",
+    "pymilvus[milvus-lite]>=3.0.0",
+    "sentence-transformers>=5.5.1",
+]

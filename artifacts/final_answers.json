@@ -1,0 +1,132 @@
+[
+  {
+    "question": "How do I cancel my subscription?",
+    "answer": "You can cancel your subscription at any time from **Settings > Billing > Cancel Plan** [chunk_004]. Your access will continue until the end of your current paid period, and no partial refunds are issued [chunk_004]. Your data will be retained for 30 days after cancellation before permanent deletion [chunk_004].",
+    "supported": true,
+    "citations": [
+      "chunk_004"
+    ],
+    "retrieved_chunk_ids": [
+      "chunk_004",
+      "chunk_003",
+      "chunk_002",
+      "chunk_016",
+      "chunk_017"
+    ],
+    "validation": {
+      "passed": true,
+      "issues": []
+    }
+  },
+  {
+    "question": "What are the rate limits for the Pro plan?",
+    "answer": "The Pro plan has the following rate limits: 50 requests per second, 2,000 requests per minute, and 1,000,000 requests per month [chunk_006].",
+    "supported": true,
+    "citations": [
+      "chunk_006"
+    ],
+    "retrieved_chunk_ids": [
+      "chunk_006",
+      "chunk_005",
+      "chunk_001",
+      "chunk_002",
+      "chunk_003"
+    ],
+    "validation": {
+      "passed": true,
+      "issues": []
+    }
+  },
+  {
+    "question": "How do I verify webhook signatures?",
+    "answer": "To verify webhook signatures, you should use the `X-Webhook-Signature` header included with every delivery [chunk_019]. The verification process involves extracting the timestamp and signature from the header, constructing a signed payload by concatenating the timestamp with the request payload, and then comparing an HMAC-SHA256 hash of this signed payload against the received signature using constant-time comparison [chunk_019]. A Python implementation is provided that demonstrates this process [chunk_019]. You should also reject any request where the timestamp is older than 5 minutes to guard against replay attacks [chunk_019]. The signing secret needed for verification is generated when you save your webhook endpoint and should be stored securely [chunk_016].",
+    "supported": true,
+    "citations": [
+      "chunk_019",
+      "chunk_016"
+    ],
+    "retrieved_chunk_ids": [
+      "chunk_019",
+      "chunk_016",
+      "chunk_015",
+      "chunk_018",
+      "chunk_021"
+    ],
+    "validation": {
+      "passed": true,
+      "issues": []
+    }
+  },
+  {
+    "question": "What is the OAuth 2.0 refresh token lifetime?",
+    "answer": "The OAuth 2.0 refresh token lifetime is 30 days [chunk_013].",
+    "supported": true,
+    "citations": [
+      "chunk_013"
+    ],
+    "retrieved_chunk_ids": [
+      "chunk_007",
+      "chunk_002",
+      "chunk_008",
+      "chunk_013",
+      "chunk_011"
+    ],
+    "validation": {
+      "passed": true,
+      "issues": []
+    }
+  },
+  {
+    "question": "How long are API request logs retained?",
+    "answer": "API request logs are retained for 90 days [chunk_024].",
+    "supported": true,
+    "citations": [
+      "chunk_024"
+    ],
+    "retrieved_chunk_ids": [
+      "chunk_007",
+      "chunk_026",
+      "chunk_024",
+      "chunk_025",
+      "chunk_008"
+    ],
+    "validation": {
+      "passed": true,
+      "issues": []
+    }
+  },
+  {
+    "question": "Does the API support GraphQL queries?",
+    "answer": "The knowledge base does not provide enough information to answer this",
+    "supported": false,
+    "citations": [],
+    "retrieved_chunk_ids": [
+      "chunk_011",
+      "chunk_007",
+      "chunk_010",
+      "chunk_009",
+      "chunk_018"
+    ],
+    "validation": {
+      "passed": true,
+      "issues": []
+    }
+  },
+  {
+    "question": "What are the uptime SLA guarantees?",
+    "answer": "The knowledge base does not provide enough information to answer this",
+    "supported": false,
+    "citations": [],
+    "retrieved_chunk_ids": [
+      "chunk_001",
+      "chunk_003",
+      "chunk_020",
+      "chunk_002",
+      "chunk_007"
+    ],
+    "validation": {
+      "passed": true,
+      "issues": []
+    }
+  }
+]
